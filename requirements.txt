@@ -1,0 +1,12 @@
+# Main environment (venv/): greedy runs, oracle scoring, figures. Python 3.11.
+# Versions are the ones the stored results were produced with.
+torch==2.11.0            # CUDA build: pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+transformers==5.16.1     # Qwen3.5 and gemma-4 exist only in transformers 5.x
+tokenizers==0.23.2
+accelerate==1.14.0
+safetensors==0.8.0
+pyarrow==25.0.1
+numpy==2.4.6
+matplotlib==3.11.1
+google-genai==2.22.0     # answer-extraction oracle (Gemini); needs GEMINI_API_KEY
+bitsandbytes==0.50.2     # only for --quant int8/nf4; not used in this experiment

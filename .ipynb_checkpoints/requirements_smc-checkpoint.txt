@@ -1,0 +1,6 @@
+# SMC environment (venv_smc/): src/run_smc.py only. Python 3.11.
+# Must be separate from the main environment: genlm-backend pins its own transformers
+# and vllm versions. Install with:  pip install -r requirements_smc.txt
+genlm-control==0.4.0
+genlm-backend[vllm]==0.3.0   # pulls vllm 0.26.0, transformers 5.17, torch 2.11
+pyarrow==25.0.1

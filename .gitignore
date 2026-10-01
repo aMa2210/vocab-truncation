@@ -1,0 +1,12 @@
+# environments
+venv/
+venv_smc/
+__pycache__/
+# run artefacts
+logs/
+results_smc/
+*.partial
+results/oracle_cache.jsonl
+# secrets
+api_key.env
+.env
