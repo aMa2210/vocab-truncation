@@ -10,3 +10,6 @@ results/oracle_cache.jsonl
 # secrets
 api_key.env
 .env
+
+# Jupyter autosaves
+.ipynb_checkpoints/
